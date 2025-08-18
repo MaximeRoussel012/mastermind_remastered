@@ -8,11 +8,12 @@
 #include<cmath>
 #include<algorithm>
 
-/*
-int NUMBER_OF_TRY = 10;
-int MIN_NUMBER = 0;
-int MAX_NUMBER= 5;
-*/
+
+const int NUMBER_OF_TRY = 10;
+const int MIN_NUMBER = 0;
+const int MAX_NUMBER= 5;
+const int NUMBER_COMBI = 4;
+
 
 struct Response{
  int rr;

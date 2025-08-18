@@ -2,11 +2,6 @@
 #include<random>
 
 
-int NUMBER_OF_TRY = 10;
-int MIN_NUMBER = 0;
-int MAX_NUMBER= 5;
-int NUMBER_COMBI = 4;
-
 int main(){
     std::random_device rd;  
     std::mt19937 gen(rd()); 
@@ -27,7 +22,7 @@ int main(){
     fichier >> a_deviner;*/
 
     Mastermind game(NUMBER_OF_TRY, goal);
-    std::cout<< "Bienvenue dans mon MasterMind, tu as " << NUMBER_OF_TRY << " chances pour trouver la combinaison de " << NUMBER_COMBI << " chiffres compris entre " << MIN_NUMBER << " et " << MAX_NUMBER << ". Bonne chance ;)" << std::endl;
+    std::cout<< "Bienvenue dans mon MasterMind, tu as " << NUMBER_OF_TRY << " chances pour trouver la combinaison de " << NUMBER_COMBI << " chiffres comprise entre " << MIN_NUMBER << " et " << MAX_NUMBER << ". Bonne chance ;)" << std::endl;
     bool win = game.play();
     if (!win) {
         std::cout << "la reponse etait " << goal << std::endl; 

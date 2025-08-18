@@ -1,5 +1,5 @@
 #include"combination.hpp"
-int NUMBER_COMBI = 4;
+
 
 Combination::Combination(): n(0), values(){};
 
