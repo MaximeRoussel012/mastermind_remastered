@@ -4,4 +4,7 @@ cd build
 cmake ..
 cmake --build .
 
-Allez ensuite dans le main.exe du dossier build afin de jouer.
+Lancez ensuite dans le main.exe du dossier build afin de jouer.
+
+On rappel que le jeu contient 4 chiffres compris entre 0 et 5, par exemple:
+0 0 1 5
