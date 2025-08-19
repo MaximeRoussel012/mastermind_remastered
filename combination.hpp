@@ -1,7 +1,7 @@
 #ifndef COMBINATION_HPP
 #define COMBINATION_HPP
 
-#include <set>
+#include<set>
 #include<vector>
 #include<iostream>
 #include<fstream>

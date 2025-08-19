@@ -40,18 +40,18 @@ return os;
 };
 
 int Combination::count_rr(const Combination& a) const {
-if (n != a.size()){
-std::cout<< "erreur de taille" << std::endl;
-return 0;
-};
+    if (n != a.size()){
+    std::cout<< "erreur de taille" << std::endl;
+    return 0;
+    };
 
-int count =0;
-for (int i=0; i<n;i++){
-if(values[i]==a.values[i]){
-    count++;
-};
-}
-return count;
+    int count =0;
+    for (int i=0; i<n;i++){
+    if(values[i]==a.values[i]){
+        count++;
+    };
+    }
+    return count;
 };
 
 std::set<int> Combination::unique_values() const {
@@ -86,8 +86,8 @@ int Combination::count_rw(const Combination& a) const {
     for (auto it = listNum.begin(); it != listNum.end(); ++it){
         int count_this = std::count(values.begin(), values.end(), *it);
         int count_a = std::count(a.values.begin(), a.values.end(), *it);
-        int minus = count_right_place(*it,a);
-        rw += std::min(count_this ,count_a) - minus;
+        int rr = count_right_place(*it,a);
+        rw += std::min(count_this ,count_a) - rr;
     };
     return rw;
 };
